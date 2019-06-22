@@ -1,6 +1,6 @@
 package com.test.java;
 
-public class Cliente {
+ public  class Cliente {
 	
 	public String fullname;
 	public String nid;
