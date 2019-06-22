@@ -67,11 +67,57 @@ public class Test {
 		 //juan = pepe;
 		 System.out.print(juan.fullname);	
 		 
-		// List names = (List) clientes.stream().map(Cliente::getFullname).collect(Collectors.toList());
-		 //System.out.print(names);
 		 
-	
-		  List<String> list = Arrays.asList(3, 6, 9, 12, 15); 
+	        Map<Integer, String> HOSTING = new HashMap<>();
+	       
+	        HOSTING.put(1, "linode.com");
+	        HOSTING.put(2, "heroku.com");
+	        HOSTING.put(3, "digitalocean.com");
+	        HOSTING.put(4, "aws.amazon.com");
+
+	        //Map -> Stream -> Filter -> Map
+	        Map<Integer, String> collect = HOSTING.entrySet().stream()
+	                .filter(map -> map.getKey() == 2)
+	                .collect(Collectors.toMap(p -> p.getKey(), p -> p.getValue()));
+
+	        //System.out.println(collect); //output : {2=heroku.com}
+
+	        Map<Integer, String> collect2 = HOSTING.entrySet().stream()
+	                .filter(map -> map.getKey() <= 3)
+	                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+
+	        //System.out.println(collect2); //output : {1=linode.com, 2=heroku.com, 3=digitalocean.com}
+	        
+	        System.out.print("Stream -> Map");
+	        System.out.print("\n");
+	        
+	      //HashMap -> Bolsa de Servidores
+	        Map<Integer, String> SERVIDOR = new HashMap<>();
+	        
+	        SERVIDOR.put(1, "SMTP");
+	        SERVIDOR.put(2, "WebApp");
+	        SERVIDOR.put(3, "MovilApp");
+	        SERVIDOR.put(4, "RDS");
+
+	        //Map -> Stream -> Filter -> Map
+	        Map<Integer, String> collect3 = SERVIDOR.entrySet().stream()
+	                .filter(map -> map.getKey() == 4)
+	                .collect(Collectors.toMap(p -> p.getKey(), p -> p.getValue()));
+
+	        System.out.println(collect3); //output : {2=heroku.com}
+	        
+	        Map<Integer, String> collect4 = SERVIDOR.entrySet().stream()
+	                .filter(map -> map.getKey() >= 3)
+	                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+
+	        System.out.println(collect4); //output : {1=linode.com, 2=heroku.com, 3=digitalocean.com}
+	    
+	        Map<String, String, String, String> cliente = new HashMap<>();
+	        
+	        cliente.put("mkyong", "30", "Calle 100", "43432");
+	        cliente.put("jack", "27", "Calle 312", "43111");
+	        cliente.put("lawrence","18", "Calle 76", "11432");
+	       
 	
 	}
 
