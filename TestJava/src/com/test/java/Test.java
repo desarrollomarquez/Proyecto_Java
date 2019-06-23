@@ -112,11 +112,11 @@ public class Test {
 
 	        System.out.println(collect4); //output : {1=linode.com, 2=heroku.com, 3=digitalocean.com}
 	    
-	        Map<String, String, String, String> cliente = new HashMap<>();
+	        Map<Integer, String> cliente = new HashMap<>();
 	        
-	        cliente.put("mkyong", "30", "Calle 100", "43432");
-	        cliente.put("jack", "27", "Calle 312", "43111");
-	        cliente.put("lawrence","18", "Calle 76", "11432");
+	        cliente.put(30, "Calle 100");
+	        cliente.put(27, "Calle 312");
+	        cliente.put(18, "Calle 76");
 	       
 	
 	}
