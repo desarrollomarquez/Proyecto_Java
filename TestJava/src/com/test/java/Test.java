@@ -118,7 +118,12 @@ public class Test {
 	        cliente.put(27, "Calle 312");
 	        cliente.put(18, "Calle 76");
 	       
-	
+	        //System.out.print(cliente);
+	        
+	        Map<Integer, String> collect5 = cliente.entrySet().stream()
+	        		.filter(map -> map.getKey() > 20)
+	        		.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+	       System.out.print(collect5);
 	}
 
 }
