@@ -124,6 +124,12 @@ public class Test {
 	        		.filter(map -> map.getKey() > 20)
 	        		.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 	       System.out.print(collect5);
+	       System.out.print("\n");
+	       
+	       Set<Cliente> hashCliente = new HashSet<Cliente>();
+	       
+	   
+	       
 	}
 
 }
