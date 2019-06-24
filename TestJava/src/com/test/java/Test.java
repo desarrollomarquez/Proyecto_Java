@@ -128,7 +128,7 @@ public class Test {
 	       
 	       Set<Cliente> hashCliente = new HashSet<Cliente>();
 	       
-	   
+	       ArrayList<Cliente> cls = new ArrayList<Cliente>();
 	       
 	}
 
