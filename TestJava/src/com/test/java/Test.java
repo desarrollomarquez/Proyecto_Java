@@ -135,6 +135,8 @@ public class Test {
 	       arraycls.add(cl1);
 	       arraycls.add(cl2);
 	       
+	       System.out.print(arraycls);
+	       
 	      
 	       
 	       
