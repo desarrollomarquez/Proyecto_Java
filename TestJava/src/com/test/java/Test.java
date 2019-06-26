@@ -128,7 +128,13 @@ public class Test {
 	       
 	       Set<Cliente> hashCliente = new HashSet<Cliente>();
 	       
-	       ArrayList<Cliente> cls = new ArrayList<Cliente>();
+	       ArrayList<Cliente> arraycls = new ArrayList<Cliente>();
+	       Cliente cl1 = new Cliente("Jorge Rios", "12343","Calle 10","314543");
+	       Cliente cl2 = new Cliente("Allan Poo", "65646","Calle 11","314543");
+	       
+	       
+	      
+	       
 	       
 	}
 
