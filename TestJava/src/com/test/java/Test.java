@@ -132,6 +132,8 @@ public class Test {
 	       Cliente cl1 = new Cliente("Jorge Rios", "12343","Calle 10","314543");
 	       Cliente cl2 = new Cliente("Allan Poo", "65646","Calle 11","314543");
 	       
+	       arraycls.add(cl1);
+	       arraycls.add(cl2);
 	       
 	      
 	       
