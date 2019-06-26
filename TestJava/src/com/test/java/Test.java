@@ -20,6 +20,7 @@ import java.util.*;
 public class Test {
 	
 	private static Collection<? extends Cliente> clientes;
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -136,6 +137,16 @@ public class Test {
 	       arraycls.add(cl2);
 	       
 	       System.out.print(arraycls);
+	       
+	       System.out.print("\n");
+	       
+	       ////////////Interfaces //////
+	     
+	       Gato cat = new Gato();
+	       
+	       cat.animalsound();
+	       cat.sleep();
+	       
 	       
 	      
 	       
