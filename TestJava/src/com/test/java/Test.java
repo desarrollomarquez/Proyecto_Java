@@ -137,7 +137,8 @@ public class Test {
 	       arraycls.add(cl2);
 	       
 	       for (Cliente cl: arraycls) {
-	    	   System.out.print(cl.nid + cl.fullname);
+	    	   System.out.print(cl.nid + " - "+ cl.fullname);
+	    	   System.out.print("\n");
 		   }
 	       
 	       System.out.print("\n");
