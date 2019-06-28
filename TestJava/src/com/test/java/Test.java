@@ -141,7 +141,15 @@ public class Test {
 	    	   System.out.print("\n");
 		   }
 	       
-	       System.out.print("\n");
+	       arraycls.stream().forEach((p) -> {
+	    	   System.out.print(p.getFullname());
+	    	   System.out.print("\n");
+	    	   System.out.print(p.getNid());
+	    	   System.out.print("\n");
+	    	   System.out.print(p.getTelefono());
+	    	   });
+	       
+	       
 	       
 	       ////////////Interfaces //////
 	     
