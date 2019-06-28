@@ -142,11 +142,8 @@ public class Test {
 		   }
 	       
 	       arraycls.stream().forEach((p) -> {
-	    	   System.out.print(p.getFullname());
+	    	   System.out.print(p.getFullname()+ " "+p.getNid()+" "+p.getTelefono());
 	    	   System.out.print("\n");
-	    	   System.out.print(p.getNid());
-	    	   System.out.print("\n");
-	    	   System.out.print(p.getTelefono());
 	    	   });
 	       
 	       
