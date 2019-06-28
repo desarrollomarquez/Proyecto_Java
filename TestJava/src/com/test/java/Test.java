@@ -147,7 +147,10 @@ public class Test {
 	    	   });
 	       
 	       
-	       
+	       arraycls.forEach((k,v) -> {
+	    	   System.out.print(v.getFullname());
+	    	   
+	       });
 	       ////////////Interfaces //////
 	     
 	       Gato cat = new Gato();
