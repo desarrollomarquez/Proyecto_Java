@@ -147,7 +147,9 @@ public class Test {
 	    	   });
 	       
 	       
-	       Cliente clfiltro = arraycls.stream().filter(map -> map.getNid() > "9999" ).findFirst().get();
+	       Cliente clfiltro = arraycls.stream()
+	    		   .filter(map -> map.getNid() > "9999" )
+	    		   .collect(Collectors.toMap(Map., Map.Entry::getValue));
 	       ////////////Interfaces //////
 	     
 	       Gato cat = new Gato();
