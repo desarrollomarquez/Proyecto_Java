@@ -131,7 +131,7 @@ public class Test {
 	       
 	       ArrayList<Cliente> arraycls = new ArrayList<Cliente>();
 	       Cliente cl1 = new Cliente("Jorge Rios", "12343","Calle 10","314543");
-	       Cliente cl2 = new Cliente("Allan Poo", "65646","Calle 11","314543");
+	       Cliente cl2 = new Cliente("Al	lan Poo", "65646","Calle 11","314543");
 	       
 	       arraycls.add(cl1);
 	       arraycls.add(cl2);
@@ -147,6 +147,7 @@ public class Test {
 	    	   });
 	       
 	       
+	       Cliente clfiltro = arraycls.stream().filter(map -> map.getNid() > "9999" ).findFirst().get();
 	       ////////////Interfaces //////
 	     
 	       Gato cat = new Gato();
